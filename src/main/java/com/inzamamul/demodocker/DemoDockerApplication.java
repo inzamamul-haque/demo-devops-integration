@@ -14,6 +14,11 @@ public class DemoDockerApplication {
 		return "Inzamamul Haque Spring Docker Image is Running";
 	}
 
+	@GetMapping("/test")
+	public String test() {
+		return "Inzamamul Haque docker integration is sucessfully done";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(DemoDockerApplication.class, args);
 	}
